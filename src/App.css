@@ -36,3 +36,61 @@
     transform: rotate(360deg);
   }
 }
+
+.leaflet-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.circle-magic-kingdom{
+  fill: none;
+  stroke: red;
+  stroke-width: 5px;
+  transition: stroke-width .5s;
+  animation: MagicKingdom infinite 5s;
+}
+
+.circle-magic-kingdom:hover{
+  stroke-width: 15px;
+}
+
+@keyframes MagicKingdom {
+  0% { stroke: red;}
+  15% { stroke: orange;}
+  25% { stroke: yellow;}
+  35% { stroke: aqua;}
+  45% { stroke: blue;}
+  55% { stroke: brown;}
+  65% { stroke: coral;}
+  75% { stroke: teal;}
+  85% { stroke: darkblue;}
+  100% { stroke: darkgreen;}
+}
+
+.sidebar {
+  box-sizing: border-box;
+  padding: 2em;
+  width: 30vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  background-color: white;
+  height: 100vh;
+}
+
+.sidebar h2,
+.sidebar p,
+.sidebar ul {
+  text-align: left;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar button {
+  width: 100%;
+  font-weight: bold;
+  padding: .8em 1em;
+}
