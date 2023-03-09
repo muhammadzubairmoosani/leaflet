@@ -1,13 +1,12 @@
+import "leaflet-fullscreen/dist/leaflet.fullscreen.css";
 import "leaflet/dist/leaflet.css";
 import "./App.css";
-import "leaflet-fullscreen/dist/leaflet.fullscreen.css";
-
-import { FullScreen } from "./examples";
+import { Polygons } from "./examples";
 
 function App() {
   return (
     <div className="App">
-      <FullScreen />
+      <Polygons />
     </div>
   );
 }

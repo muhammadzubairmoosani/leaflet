@@ -33,7 +33,7 @@ export function FindCurrentLocation() {
     setTimeout(() => {
       getCurrentLocation();
     }, 1000);
-  }, []);
+  }, [getCurrentLocation]);
 
   return (
     <MapContainer ref={mapRef} center={location} zoom={zoom}>
